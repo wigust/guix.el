@@ -23,6 +23,8 @@
 
 ;;; Code:
 
+(require 'guix-help)
+
 (defcustom guixsd-about-buffer-name "*Guix About*"
   "Buffer name for '\\[guix-about]'."
   :type 'string
@@ -141,7 +143,8 @@ Unlike `guixsd-about', this command always recreates
 Switch to `guixsd-about-buffer-name' buffer if it already exists."
   (interactive)
   (guix-switch-to-buffer-or-funcall
-   guixsd-about-buffer-name #'guixsd-about-show))
+   guixsd-about-buffer-name #'guixsd-about-show)
+  (forward-button 2))
 
 (provide 'guixsd-installer)
 
