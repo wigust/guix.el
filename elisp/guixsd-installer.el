@@ -30,19 +30,20 @@
 
 (defvar guixsd-about-specifications
   `("\
+
                      The Guix System Distribution
 
                                    Liberating.  GuixSD is an advanced
                                    distribution of the GNU operating system
  :                               . developed by the GNU Project which respects
  S:                            S   the freedom of computer users.
-  : 8  . . :8         t . . .  ;  
+  : 8  . . :8         t . . .  ;
      %888.   ;       :   SX8@      Dependable.  The GNU Guix package manager,
           t 8       %  .           in addition to standard package management
            .8 8     .              features, supports transactional upgrades
            .88     t  :            and roll-backs, unprivileged package
             .  t   .8              management, per-user profiles, and more.
-             .  % .  8            
+             .  % .  8
              8   8 8               Hackable.  It provides Guile Scheme APIs,
               .  X  8              including high-level embedded domain-
               8 8@8                specific languages (EDSLs) to define
