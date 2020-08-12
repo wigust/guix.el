@@ -55,4 +55,8 @@ clean-go:
 
 .PHONY: clean-go
 
+.PHONY: check
+check:
+	emacs -batch -l test/test-helper.el -f ert-run-tests-batch-and-exit
+
 # Makefile.am ends here
